@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tv generator-info-name="Canal1CR-Daily-EPG" source-info-url="https://canal1cr.com/programacion/">
+  <channel id="canal1.cr">
+    <display-name lang="es">Canal 1 Costa Rica</display-name>
+  </channel>
+  <programme start="20261126000000 -0600" stop="20261126010000 -0600" channel="canal1.cr">
+    <title lang="es">SERIES RETRO</title>
+    <desc lang="es">🎬 ¡Viaja en el tiempo con nosotros!
+Revive los mejores momentos de la televisión clásica. En esta sección nos sumergimos en las series retro que marcaron nuestra infancia y juventud, recordamos sus episodios más icónicos, curiosidades detrás de cámaras y el impacto cultural que aún perdura.</desc>
+    <icon src="https://canal1cr.com/Guiatv/uploads/472cc7ed7327eee6e191e484494997ad.jpg" />
+  </programme>
+  <programme start="20261126010000 -0600" stop="20261126060000 -0600" channel="canal1.cr">
+    <title lang="es">MUSICALES DEL UNO</title>
+    <desc lang="es">MUSICALES DEL UNO – El ritmo que nos conecta
+Disfrute de un espacio dedicado a la música, donde los sonidos, las melodías y los diferentes géneros se unen para ofrecer entretenimiento y momentos especiales.
+Una propuesta para los amantes de la música, con canciones que acompañan generaciones, artistas que dejan huella y ritmos para todos los gustos.
+Déjese llevar por la música y disfrute de una experiencia llena de emociones, recuerdos y entretenimiento.
+Musicales del Uno, la música que inspira, emociona y conecta. Por Canal 1 Costa Rica.</desc>
+    <icon src="https://canal1cr.com/Guiatv/uploads/81ed6e11bb124de74443fbf5096be665.png" />
+  </programme>
+  <programme start="20261126060000 -0600" stop="20261126073000 -0600" channel="canal1.cr">
+    <title lang="es">SANTA MISA</title>
+    <desc lang="es">Santa Misa – Un encuentro con la fe
+Acompáñenos en la celebración de la Santa Misa, un espacio de fe, oración y reflexión espiritual para fortalecer nuestra relación con Dios y renovar la esperanza en nuestros corazones.
+A través de la Eucaristía, compartimos un momento de encuentro con la Palabra del Señor, la oración y la comunión, llevando un mensaje de amor, paz y solidaridad a cada hogar.
+Le invitamos a vivir esta celebración y dedicar un momento a la reflexión espiritual junto a sus seres queridos.
+Santa Misa, un espacio para alimentar el alma y fortalecer la fe. Por Canal 1 Costa Rica.</desc>
+    <icon src="https://canal1cr.com/Guiatv/uploads/141451cdc19d201c066fad009def0c93.jpg" />
+  </programme>
+  <programme start="20261126073000 -0600" stop="20261126080000 -0600" channel="canal1.cr">
+    <title lang="es">PRIMERO NOTICIAS MATUTINO</title>
+    <desc lang="es">Primero Noticias – Información que importa
+Manténgase informado con Primero Noticias, el espacio informativo de Canal 1 Costa Rica que le presenta los acontecimientos más importantes del país y el mundo.
+Le acompañamos con información actualizada, cobertura de última hora, noticias nacionales e internacionales, sucesos, política, economía, deportes y los temas que marcan la agenda informativa.
+Nuestro compromiso es ofrecerle información veraz, oportuna y de interés público, con una cobertura periodística cercana a la realidad de los costarricenses.
+Primero Noticias, la información primero. Por Canal 1 Costa Rica.</desc>
+    <icon src="https://canal1cr.com/Guiatv/uploads/037b53b09593973ff0b23a430fb9a5d9.png" />
+  </programme>
+  <programme start="20261126080000 -0600" stop="20261126083000 -0600" channel="canal1.cr">
+    <title lang="es">NOTICIAS RT EN ESPAÑOL</title>
+    <desc lang="es">NOTICIAS RT EN ESPAÑOL | El mundo, en primera plana
+Los acontecimientos que sacuden al mundo, las noticias que generan debate y las historias que marcan la agenda internacional llegan a la pantalla de Canal 1.
+A través de Noticias RT en Español, conozca los principales acontecimientos internacionales, conflictos, decisiones políticas, economía, tecnología y temas de actualidad que impactan a millones de personas.
+Reportajes, entrevistas, análisis y cobertura de los hechos más relevantes, con una mirada internacional sobre lo que sucede alrededor del planeta.
+Porque lo que ocurre en el mundo también importa.
+NOTICIAS RT EN ESPAÑOL. El mundo se informa en Canal 1.</desc>
+    <icon src="https://canal1cr.com/Guiatv/uploads/adc9adf4709070aae6dc729a0410a4cb.webp" />
+  </programme>
+  <programme start="20261126083000 -0600" stop="20261126093000 -0600" channel="canal1.cr">
+    <title lang="es">COMO HAN PASADO LOS AÑOS</title>
+    <desc lang="es">CÓMO HAN PASADO LOS AÑOS – La música que despierta recuerdos
+Un viaje musical por las canciones, los artistas y las melodías que han marcado generaciones. En Cómo han pasado los Años revivimos esos grandes éxitos que siguen presentes en nuestra memoria y que, con el paso del tiempo, continúan emocionándonos.
+Un espacio para recordar, cantar y reencontrarnos con la música que forma parte de nuestra historia, desde grandes clásicos hasta canciones inolvidables.
+Porque hay canciones que nunca pasan de moda y recuerdos que viven para siempre.
+Cómo han pasado los Años, los mejores recuerdos tienen su canción. Por Canal 1 Costa Rica.</desc>
+    <icon src="https://canal1cr.com/Guiatv/uploads/2d26b8be61d8b6ba9e45676d572da849.png" />
+  </programme>
+  <programme start="20261126093000 -0600" stop="20261126100000 -0600" channel="canal1.cr">
+    <title lang="es">ANIMADOS DEL UNO</title>
+    <desc lang="es">ANIMADOS DEL UNO – ¡La diversión comienza aquí!
+Un espacio lleno de aventuras, fantasía, risas y personajes inolvidables para los más pequeños de la casa. Disfrute de historias que despiertan la imaginación y llenan de alegría cada momento.
+Animados del Uno, diversión para compartir en familia. Por Canal 1 Costa Rica.</desc>
+    <icon src="https://canal1cr.com/Guiatv/uploads/c3e90333992fe0998e7c30c4b10e3b53.png" />
+  </programme>
+  <programme start="20261126100000 -0600" stop="20261126110000 -0600" channel="canal1.cr">
+    <title lang="es">ANIMADOS RETRO DEL UNO</title>
+    <desc lang="es">ANIMADOS RETRO DEL UNO – ¡La nostalgia también se disfruta!
+Reviva la magia de la televisión y los dibujos animados que marcaron generaciones. Un espacio para recordar grandes historias, personajes inolvidables y aventuras que siguen conquistando corazones.
+La diversión de ayer vuelve a la pantalla para compartirla con toda la familia.
+Animados Retro del Uno, los recuerdos de siempre vuelven a vivir. Por Canal 1 Costa Rica.</desc>
+    <icon src="https://canal1cr.com/Guiatv/uploads/377cca6411d03e2bc40159661a9f1d8b.png" />
+  </programme>
+  <programme start="20261126110000 -0600" stop="20261126120000 -0600" channel="canal1.cr">
+    <title lang="es">EL PROYECTOR DEL UNO</title>
+    <desc lang="es">EL PROYECTOR – Historias que merecen ser vistas
+Prepárese para descubrir el fascinante mundo del cine y el entretenimiento. En El Proyector le acercamos películas, grandes producciones, estrenos, clásicos inolvidables y curiosidades del séptimo arte.
+Un espacio para los amantes del cine, donde cada historia nos invita a emocionarnos, sorprendernos y disfrutar de la magia de la pantalla.
+El Proyector, donde las grandes historias cobran vida. Por Canal 1 Costa Rica.</desc>
+    <icon src="https://canal1cr.com/Guiatv/uploads/ae7856442a310c45f210ae819a52988f.png" />
+  </programme>
+  <programme start="20261126120000 -0600" stop="20261126123000 -0600" channel="canal1.cr">
+    <title lang="es">RT NOTICIAS EN ESPAÑOL</title>
+    <desc lang="es">NOTICIAS RT EN ESPAÑOL | El mundo, en primera plana
+Los acontecimientos que sacuden al mundo, las noticias que generan debate y las historias que marcan la agenda internacional llegan a la pantalla de Canal 1.
+A través de Noticias RT en Español, conozca los principales acontecimientos internacionales, conflictos, decisiones políticas, economía, tecnología y temas de actualidad que impactan a millones de personas.
+Reportajes, entrevistas, análisis y cobertura de los hechos más relevantes, con una mirada internacional sobre lo que sucede alrededor del planeta.
+Porque lo que ocurre en el mundo también importa.
+NOTICIAS RT EN ESPAÑOL. El mundo se informa en Canal 1.</desc>
+    <icon src="https://canal1cr.com/Guiatv/uploads/1ea273e53904e8e1f2622974404b9e02.webp" />
+  </programme>
+  <programme start="20261126123000 -0600" stop="20261126130000 -0600" channel="canal1.cr">
+    <title lang="es">PRIMERO DEPORTES</title>
+    <desc lang="es">Primero Deportes – La pasión por el deporte
+Primero Deportes es el espacio deportivo de Canal 1 Costa Rica, donde encontrará la información más relevante del acontecer deportivo nacional e internacional.
+Noticias, resultados, análisis, entrevistas, estadísticas y cobertura de las principales disciplinas deportivas, con información actualizada y las historias que marcan la jornada.
+Vivimos la pasión del deporte y llevamos hasta usted los acontecimientos que hacen noticia dentro y fuera de nuestras fronteras.
+Primero Deportes, donde el deporte es noticia. Por Canal 1 Costa Rica.</desc>
+    <icon src="https://canal1cr.com/Guiatv/uploads/1e03f40ab76729ab1b2227ae5cf7a967.png" />
+  </programme>
+  <programme start="20261126130000 -0600" stop="20261126133000 -0600" channel="canal1.cr">
+    <title lang="es">SERIES RETRO</title>
+    <desc lang="es">🎬 ¡Viaja en el tiempo con nosotros!
+Revive los mejores momentos de la televisión clásica. En esta sección nos sumergimos en las series retro que marcaron nuestra infancia y juventud, recordamos sus episodios más icónicos, curiosidades detrás de cámaras y el impacto cultural que aún perdura.</desc>
+    <icon src="https://canal1cr.com/Guiatv/uploads/38d9b8e9da0abc46470233ff949ead12.jpg" />
+  </programme>
+  <programme start="20261126133000 -0600" stop="20261126140000 -0600" channel="canal1.cr">
+    <title lang="es">PRIMERO NOTICIAS MERIDIANO</title>
+    <desc lang="es">Primero Noticias – Información que importa
+Manténgase informado con Primero Noticias, el espacio informativo de Canal 1 Costa Rica que le presenta los acontecimientos más importantes del país y el mundo.
+Le acompañamos con información actualizada, cobertura de última hora, noticias nacionales e internacionales, sucesos, política, economía, deportes y los temas que marcan la agenda informativa.
+Nuestro compromiso es ofrecerle información veraz, oportuna y de interés público, con una cobertura periodística cercana a la realidad de los costarricenses.
+Primero Noticias, la información primero. Por Canal 1 Costa Rica.</desc>
+    <icon src="https://canal1cr.com/Guiatv/uploads/76a01402357746352e9514e3e464bac8.png" />
+  </programme>
+  <programme start="20261126140000 -0600" stop="20261126150000 -0600" channel="canal1.cr">
+    <title lang="es">DRAMAS</title>
+    <desc lang="es">DRAMAS – Historias que llegan al corazón
+Disfrute de emocionantes historias llenas de amor, pasión, intriga y suspenso. Una selección de grandes producciones que cautivan con personajes inolvidables, giros inesperados y relatos que despiertan toda clase de emociones.
+Cada historia tiene algo que contar y cada capítulo una nueva sorpresa.
+Dramas, emociones que se viven en cada historia. Por Canal 1 Costa Rica.</desc>
+    <icon src="https://canal1cr.com/Guiatv/uploads/ee06b38a256707c994823b58ffb1b0aa.png" />
+  </programme>
+  <programme start="20261126150000 -0600" stop="20261126160000 -0600" channel="canal1.cr">
+    <title lang="es">SERIES RETRO</title>
+    <desc lang="es">🎬 ¡Viaja en el tiempo con nosotros!
+Revive los mejores momentos de la televisión clásica. En esta sección nos sumergimos en las series retro que marcaron nuestra infancia y juventud, recordamos sus episodios más icónicos, curiosidades detrás de cámaras y el impacto cultural que aún perdura.</desc>
+    <icon src="https://canal1cr.com/Guiatv/uploads/2571c6ee3b7a4dcbe412e190b14d7abc.jpg" />
+  </programme>
+  <programme start="20261126160000 -0600" stop="20261126170000 -0600" channel="canal1.cr">
+    <title lang="es">ANIMADOS RETRO</title>
+    <desc lang="es">ANIMADOS RETRO DEL UNO – ¡La nostalgia también se disfruta!
+Reviva la magia de la televisión y los dibujos animados que marcaron generaciones. Un espacio para recordar grandes historias, personajes inolvidables y aventuras que siguen conquistando corazones.
+La diversión de ayer vuelve a la pantalla para compartirla con toda la familia.
+Animados Retro del Uno, los recuerdos de siempre vuelven a vivir. Por Canal 1 Costa Rica</desc>
+    <icon src="https://canal1cr.com/Guiatv/uploads/e01af40d6c06af6fbd5df743380699b8.png" />
+  </programme>
+  <programme start="20261126170000 -0600" stop="20261126180000 -0600" channel="canal1.cr">
+    <title lang="es">COMO HAN PASADO LOS AÑOS</title>
+    <desc lang="es">CÓMO HAN PASADO LOS AÑOS – La música que despierta recuerdos
+Un viaje musical por las canciones, los artistas y las melodías que han marcado generaciones. En Cómo han pasado los Años revivimos esos grandes éxitos que siguen presentes en nuestra memoria y que, con el paso del tiempo, continúan emocionándonos.
+Un espacio para recordar, cantar y reencontrarnos con la música que forma parte de nuestra historia, desde grandes clásicos hasta canciones inolvidables.
+Porque hay canciones que nunca pasan de moda y recuerdos que viven para siempre.
+Cómo han pasado los Años, los mejores recuerdos tienen su canción. Por Canal 1 Costa Rica.</desc>
+    <icon src="https://canal1cr.com/Guiatv/uploads/8e2590a5597cb5cd8b19b81bd5fe3bdd.png" />
+  </programme>
+  <programme start="20261126180000 -0600" stop="20261126190000 -0600" channel="canal1.cr">
+    <title lang="es">PRIMERO NOTICIAS ESTELAR</title>
+    <desc lang="es">Primero Noticias – Información que importa
+Manténgase informado con Primero Noticias, el espacio informativo de Canal 1 Costa Rica que le presenta los acontecimientos más importantes del país y el mundo.
+Le acompañamos con información actualizada, cobertura de última hora, noticias nacionales e internacionales, sucesos, política, economía, deportes y los temas que marcan la agenda informativa.
+Nuestro compromiso es ofrecerle información veraz, oportuna y de interés público, con una cobertura periodística cercana a la realidad de los costarricenses.
+Primero Noticias, la información primero. Por Canal 1 Costa Rica.</desc>
+    <icon src="https://canal1cr.com/Guiatv/uploads/8da4d2b8e3eae75541b361201f433d8e.png" />
+  </programme>
+  <programme start="20261126190000 -0600" stop="20261126193000 -0600" channel="canal1.cr">
+    <title lang="es">PRIMERO NOTICIAS VESPERTINA</title>
+    <desc lang="es">Primero Noticias – Información que importa
+Manténgase informado con Primero Noticias, el espacio informativo de Canal 1 Costa Rica que le presenta los acontecimientos más importantes del país y el mundo.
+Le acompañamos con información actualizada, cobertura de última hora, noticias nacionales e internacionales, sucesos, política, economía, deportes y los temas que marcan la agenda informativa.</desc>
+    <icon src="https://canal1cr.com/Guiatv/uploads/31d23c6c7decb3941e19629fa57cd611.png" />
+  </programme>
+  <programme start="20261126193000 -0600" stop="20261126200000 -0600" channel="canal1.cr">
+    <title lang="es">PRIMERO NOTICIAS VESPERTINAS</title>
+    <desc lang="es">Primero Noticias – Información que importa
+Manténgase informado con Primero Noticias, el espacio informativo de Canal 1 Costa Rica que le presenta los acontecimientos más importantes del país y el mundo.
+Le acompañamos con información actualizada, cobertura de última hora, noticias nacionales e internacionales, sucesos, política, economía, deportes y los temas que marcan la agenda informativa.</desc>
+    <icon src="https://canal1cr.com/Guiatv/uploads/1e9bb61d3a79d6dc31001255cc8e5e34.png" />
+  </programme>
+  <programme start="20261126200000 -0600" stop="20261126203000 -0600" channel="canal1.cr">
+    <title lang="es">PRIMERO DEPORTES</title>
+    <desc lang="es">Primero Deportes – La pasión por el deporte
+Primero Deportes es el espacio deportivo de Canal 1 Costa Rica, donde encontrará la información más relevante del acontecer deportivo nacional e internacional.
+Noticias, resultados, análisis, entrevistas, estadísticas y cobertura de las principales disciplinas deportivas, con información actualizada y las historias que marcan la jornada.
+Vivimos la pasión del deporte y llevamos hasta usted los acontecimientos que hacen noticia dentro y fuera de nuestras fronteras.
+Primero Deportes, donde el deporte es noticia. Por Canal 1 Costa Rica.</desc>
+    <icon src="https://canal1cr.com/Guiatv/uploads/1135df2957c33a814799ff2caa5c134b.png" />
+  </programme>
+  <programme start="20261126203000 -0600" stop="20261126210000 -0600" channel="canal1.cr">
+    <title lang="es">SERIES RETRO</title>
+    <desc lang="es">🎬 ¡Viaja en el tiempo con nosotros!
+Revive los mejores momentos de la televisión clásica. En esta sección nos sumergimos en las series retro que marcaron nuestra infancia y juventud, recordamos sus episodios más icónicos, curiosidades detrás de cámaras y el impacto cultural que aún perdura.</desc>
+    <icon src="https://canal1cr.com/Guiatv/uploads/8be7a24fd45aa1b1dd12cfce2ed38e31.jpg" />
+  </programme>
+  <programme start="20261126210000 -0600" stop="20261126220000 -0600" channel="canal1.cr">
+    <title lang="es">PRIMERO NOTICIAS VESPERTINAS</title>
+    <desc lang="es">Primero Noticias – Información que importa
+Manténgase informado con Primero Noticias, el espacio informativo de Canal 1 Costa Rica que le presenta los acontecimientos más importantes del país y el mundo.
+Le acompañamos con información actualizada, cobertura de última hora, noticias nacionales e internacionales, sucesos, política, economía, deportes y los temas que marcan la agenda informativa.
+Sintonice nuestras cuatro ediciones informativas</desc>
+    <icon src="https://canal1cr.com/Guiatv/uploads/ce92584ac9d18b83251e7e5101da52ad.png" />
+  </programme>
+  <programme start="20261126220000 -0600" stop="20261126230000 -0600" channel="canal1.cr">
+    <title lang="es">SERIES RETRO</title>
+    <desc lang="es">🎬 ¡Viaja en el tiempo con nosotros!
+Revive los mejores momentos de la televisión clásica. En esta sección nos sumergimos en las series retro que marcaron nuestra infancia y juventud, recordamos sus episodios más icónicos, curiosidades detrás de cámaras y el impacto cultural que aún perdura.</desc>
+    <icon src="https://canal1cr.com/Guiatv/uploads/140f9763326524822eaaa5ce327f47bc.jpg" />
+  </programme>
+  <programme start="20261126230000 -0600" stop="20261127000000 -0600" channel="canal1.cr">
+    <title lang="es">NOTICIAS CGTN EN ESPAÑOL</title>
+    <desc lang="es">CGTN EN ESPAÑOL – El mundo en perspectiva
+Conozca los acontecimientos que marcan la agenda internacional a través de CGTN en Español, un espacio informativo dedicado a acercarle las noticias más relevantes de China y del mundo.
+Actualidad, política, economía, tecnología, cultura y desarrollo internacional se unen en una cobertura que permite conocer los principales acontecimientos globales y comprender los cambios que transforman nuestra sociedad.
+Descubra otras perspectivas sobre los hechos que hacen noticia, con reportajes, entrevistas y contenidos informativos desde diferentes rincones del planeta.
+CGTN en Español, una mirada global a la actualidad. Ahora en Canal 1 Costa Rica.</desc>
+    <icon src="https://canal1cr.com/Guiatv/uploads/340be3f1150a5cccdb2ecc4016227275.webp" />
+  </programme>
+</tv>
