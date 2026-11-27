@@ -13,6 +13,7 @@ TZ_CR = timezone(timedelta(hours=-6))
 CHANNEL_ID = "canal1.cr"
 CHANNEL_NAME = "Canal 1 Costa Rica"
 ARCHIVO_SALIDA = "epg_canal1_diario.xml"
+DIAS_A_RECOPILAR = 3
 
 DIAS_SEMANA = [
     "Lunes",
@@ -67,8 +68,8 @@ def parsear_hhmm(texto: str) -> tuple[int, int] | None:
     return None
 
 
-def obtener_parrilla_canal1() -> list[dict]:
-    """Extrae la programación del día actual desde la guía HTML de Canal 1."""
+def obtener_parrilla_canal1(dias: int = DIAS_A_RECOPILAR) -> list[dict]:
+    """Extrae la programación de los próximos N días desde la guía HTML de Canal 1."""
     headers = {
         "User-Agent": (
             "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -101,85 +102,90 @@ def obtener_parrilla_canal1() -> list[dict]:
                 for c in primera_fila.find_all(["th", "td"])
             ]
 
-    hoy = datetime.now(TZ_CR).replace(hour=0, minute=0, second=0, microsecond=0)
-    dia_actual = DIAS_SEMANA[hoy.weekday()]
-    clave_dia = normalizar_texto(dia_actual)
-
-    if clave_dia not in encabezados:
-        print(f"[Error] No se encontró la columna '{dia_actual}' en {encabezados}.")
-        return []
-
-    idx_dia = encabezados.index(clave_dia)
     idx_ini = encabezados.index("inicio") if "inicio" in encabezados else 0
     idx_fin = encabezados.index("fin") if "fin" in encabezados else 1
 
     tbody = tabla.find("tbody") or tabla
+    filas = tbody.find_all("tr")
+
+    hoy = datetime.now(TZ_CR).replace(hour=0, minute=0, second=0, microsecond=0)
     bloques = []
 
-    for tr in tbody.find_all("tr"):
-        celdas = tr.find_all("td")
-        if len(celdas) <= max(idx_dia, idx_ini, idx_fin):
+    for offset in range(dias):
+        fecha_dia = hoy + timedelta(days=offset)
+        dia_nombre = DIAS_SEMANA[fecha_dia.weekday()]
+        clave_dia = normalizar_texto(dia_nombre)
+
+        if clave_dia not in encabezados:
+            print(f"[Aviso] No se encontró la columna '{dia_nombre}' en {encabezados}.")
             continue
 
-        ini_hm = parsear_hhmm(celdas[idx_ini].get_text(" ", strip=True))
-        fin_hm = parsear_hhmm(celdas[idx_fin].get_text(" ", strip=True))
-        if not ini_hm or not fin_hm:
-            continue
+        idx_dia = encabezados.index(clave_dia)
 
-        celda_prog = celdas[idx_dia]
-        span_nombre = celda_prog.select_one(".program-name")
-        if span_nombre:
-            if "empty-name" in (span_nombre.get("class") or []):
+        for tr in filas:
+            celdas = tr.find_all("td")
+            if len(celdas) <= max(idx_dia, idx_ini, idx_fin):
                 continue
-            titulo = re.sub(r"\s+", " ", span_nombre.get_text(" ", strip=True)).strip()
-        else:
-            titulo = re.sub(r"\s+", " ", celda_prog.get_text(" ", strip=True)).strip()
 
-        if not titulo or titulo in ("-", "—"):
-            continue
+            ini_hm = parsear_hhmm(celdas[idx_ini].get_text(" ", strip=True))
+            fin_hm = parsear_hhmm(celdas[idx_fin].get_text(" ", strip=True))
+            if not ini_hm or not fin_hm:
+                continue
 
-        descripcion = ""
-        p_desc = celda_prog.select_one(".tip p")
-        if p_desc:
-            for br in p_desc.find_all("br"):
-                br.replace_with("\n")
-            lineas_desc = [
-                re.sub(r"[ \t]+", " ", l).strip()
-                for l in p_desc.get_text().splitlines()
-            ]
-            descripcion = "\n".join(l for l in lineas_desc if l)
+            celda_prog = celdas[idx_dia]
+            span_nombre = celda_prog.select_one(".program-name")
+            if span_nombre:
+                if "empty-name" in (span_nombre.get("class") or []):
+                    continue
+                titulo = re.sub(r"\s+", " ", span_nombre.get_text(" ", strip=True)).strip()
+            else:
+                titulo = re.sub(r"\s+", " ", celda_prog.get_text(" ", strip=True)).strip()
 
-        icono = ""
-        img_tip = celda_prog.select_one(".tip img")
-        if img_tip and img_tip.get("src"):
-            icono = urljoin(url_guia, img_tip["src"].strip())
+            if not titulo or titulo in ("-", "—"):
+                continue
 
-        dt_inicio = hoy.replace(hour=ini_hm[0], minute=ini_hm[1])
-        dt_fin = hoy.replace(hour=fin_hm[0], minute=fin_hm[1])
-        if dt_fin <= dt_inicio:
-            dt_fin += timedelta(days=1)
+            descripcion = ""
+            p_desc = celda_prog.select_one(".tip p")
+            if p_desc:
+                for br in p_desc.find_all("br"):
+                    br.replace_with("\n")
+                lineas_desc = [
+                    re.sub(r"[ \t]+", " ", l).strip()
+                    for l in p_desc.get_text().splitlines()
+                ]
+                descripcion = "\n".join(l for l in lineas_desc if l)
 
-        # Unir franjas contiguas del mismo programa (ej. 01:00-02:00 + 02:00-03:00)
-        if (
-            bloques
-            and bloques[-1]["dt_fin"] == dt_inicio
-            and normalizar_texto(bloques[-1]["programa"]) == normalizar_texto(titulo)
-        ):
-            bloques[-1]["dt_fin"] = dt_fin
-            if not bloques[-1]["descripcion"] and descripcion:
-                bloques[-1]["descripcion"] = descripcion
-            if not bloques[-1]["icono"] and icono:
-                bloques[-1]["icono"] = icono
-        else:
-            bloques.append(
-                {
-                    "dt_inicio": dt_inicio,
-                    "dt_fin": dt_fin,
-                    "programa": titulo,
-                    "descripcion": descripcion,
-                    "icono": icono,
-                }
-            )
+            icono = ""
+            img_tip = celda_prog.select_one(".tip img")
+            if img_tip and img_tip.get("src"):
+                icono = urljoin(url_guia, img_tip["src"].strip())
+
+            dt_inicio = fecha_dia.replace(hour=ini_hm[0], minute=ini_hm[1])
+            dt_fin = fecha_dia.replace(hour=fin_hm[0], minute=fin_hm[1])
+            if dt_fin <= dt_inicio:
+                dt_fin += timedelta(days=1)
+
+            # Unir franjas contiguas del mismo programa (incluso al cruzar medianoche)
+            if (
+                bloques
+                and bloques[-1]["dt_fin"] == dt_inicio
+                and normalizar_texto(bloques[-1]["programa"]) == normalizar_texto(titulo)
+            ):
+                bloques[-1]["dt_fin"] = dt_fin
+                if not bloques[-1]["descripcion"] and descripcion:
+                    bloques[-1]["descripcion"] = descripcion
+                if not bloques[-1]["icono"] and icono:
+                    bloques[-1]["icono"] = icono
+            else:
+                bloques.append(
+                    {
+                        "dt_inicio": dt_inicio,
+                        "dt_fin": dt_fin,
+                        "programa": titulo,
+                        "descripcion": descripcion,
+                        "icono": icono,
+                    }
+                )
 
     return [
         {
@@ -198,7 +204,7 @@ def guardar_xmltv(programas: list[dict], ruta_archivo: str = ARCHIVO_SALIDA) -> 
     tv = ET.Element(
         "tv",
         {
-            "generator-info-name": "Canal1CR-Daily-EPG",
+            "generator-info-name": "Canal1CR-EPG",
             "source-info-url": URL_PROGRAMACION,
         },
     )
@@ -235,8 +241,8 @@ def guardar_xmltv(programas: list[dict], ruta_archivo: str = ARCHIVO_SALIDA) -> 
 
 
 if __name__ == "__main__":
-    print("Obteniendo programación diaria de Canal 1 Costa Rica...")
-    parrilla = obtener_parrilla_canal1()
+    print(f"Obteniendo programación de {DIAS_A_RECOPILAR} días de Canal 1 Costa Rica...")
+    parrilla = obtener_parrilla_canal1(DIAS_A_RECOPILAR)
     if not parrilla:
         print("No se pudo generar el EPG. Revisa la estructura de la web.")
         sys.exit(1)
